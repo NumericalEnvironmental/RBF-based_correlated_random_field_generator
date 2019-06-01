@@ -1,6 +1,8 @@
 # RBF-based_correlated_random_field_generator
 
-This is a streamlined python 3 script for generating spatially-correlated random fields in 2-D or 3-D using a radial basis function interpolator. It furnishes what I think are significant improvements in simplicity as well as function compared to an earlier effort to do the same (link to 1st posting). This script requires pandas as well as several scipy tools. See my blog post (link pending) for a brief discussion.
+![Preview](https://numericalenvironmental.files.wordpress.com/2019/06/3d-field-image2.jpg?w=1632)
+
+This is a streamlined python 3 script for generating spatially-correlated random fields in 2-D or 3-D using a radial basis function interpolator. It furnishes what I think are significant improvements in simplicity as well as function compared to an earlier effort to do the same (link to 1st posting). This script requires pandas as well as several scipy tools. See my blog post (https://numericalenvironmental.wordpress.com/2019/06/01/an-improved-3-d-correlated-random-field-generator-in-python/) for a brief discussion.
 
 The following text input files are required:
 
