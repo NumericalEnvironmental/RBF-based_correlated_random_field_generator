@@ -1,0 +1,13 @@
+parameter	x	y	z
+grid0	2001193.267	625375.1891	0
+gridend	2007671.489	633683.8663	204.0497681
+n	80	100	10
+anisotropy	1	1	0.025
+depth	0.05	# fraction of grid cells, aside from initial seeds, to have field values posited	
+stdev0	0.5	# standard deviation and lower and upper bounds for random field value assignments	
+lower	-2		
+upper	2.25		
+rsearch0	5000	# search radius	
+expn	1.5	# factors for search radius reduction during filling in of grid cells	
+dmin	0.6		
+function	linear 	# basis function selection for RBF interpolator
