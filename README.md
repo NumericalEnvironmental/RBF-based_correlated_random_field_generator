@@ -2,6 +2,14 @@
 
 ![Preview](https://numericalenvironmental.files.wordpress.com/2019/06/3d-field-image2.jpg?w=1632)
 
+February 2021 update: I’ve made some minor modifications to improve performance and to add an additional capability. These include:
+
+* In the prior version, nearest-neighbor interpolation was used to fill in the full model grid once the seed point set was completed. This took advantage of a fast interpolation routine in SciPy but led to a blocky appearance of the posited field unless a large number of seed points was specified. Inverse distance weighting interpolation has now replaced nearest-neighbor interpolation for the grid fill-in step is used to perform the final interpolation. Note that the seed points are excluded from the final full set of model grid cells to produce a smoother result.
+* The property distribution histogram can now be shifted and stretched to match a given normal distribution.
+* A correlated covariable has been added.
+
+The Python script and associated input files have been updated.
+
 This is a streamlined python 3 script for generating spatially-correlated random fields in 2-D or 3-D using a radial basis function interpolator. It furnishes what I think are significant improvements in simplicity as well as function compared to an earlier effort to do the same (link to 1st posting). This script requires pandas as well as several scipy tools. See my blog post (https://numericalenvironmental.wordpress.com/2019/06/01/an-improved-3-d-correlated-random-field-generator-in-python/) for a brief discussion.
 
 The following text input files are required:
