@@ -1,0 +1,4 @@
+intercept 	-1.
+slope 	-0.3
+noise 	0.3
+fraction 	0.5
