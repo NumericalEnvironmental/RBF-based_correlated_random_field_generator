@@ -8,7 +8,7 @@ February 2021 update: I’ve made some minor modifications to improve performanc
 * The property distribution histogram can now be shifted and stretched to match a given normal distribution.
 * A correlated covariable has been added.
 
-The Python script and associated input files have been updated.
+The Python script (randfield3.py) and associated input files have been updated. I've left randfield2.py as legacy code (have not tested its compatibility with the new params.txt input file, though).
 
 This is a streamlined python 3 script for generating spatially-correlated random fields in 2-D or 3-D using a radial basis function interpolator. It furnishes what I think are significant improvements in simplicity as well as function compared to an earlier effort to do the same (link to 1st posting). This script requires pandas as well as several scipy tools. See my blog post (https://numericalenvironmental.wordpress.com/2019/06/01/an-improved-3-d-correlated-random-field-generator-in-python/) for a brief discussion.
 
